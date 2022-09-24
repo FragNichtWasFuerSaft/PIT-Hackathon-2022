@@ -19,7 +19,10 @@ public class isColliding : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D col) {
+        if(col.name == "BrummBrumm") {
+            Debug.Log("SHEESH");
+            //Auto muss jetzt verlangsamt werden! (und Log muss weg xD)
+        }
         sr.sprite = sp;
-        //Auto muss jetzt verlangsamt werden!
     }
 }
